@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+	<style>
+		
+		body
+		{
+			background: #080706;
+			
+		}
+
+		.pedro
+		{
+			width: 50px;
+			height: 50px;
+			background: black;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-radius: 10px;
+		}
+		.poder
+		{
+			width: 80%;
+			height: 80%;
+			background: #EFEFEF;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			border-radius: 10px;
+
+		}
+				.enlace
+		{
+
+			background: white;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 500px;
+			left: 20px;
+			color: white;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			box-sizing: border-box;		
+			font-size: 20px;
+			border: 5px solid;
+			text-align: center;
+		}
+	</style>
+
+<body onload="click()">
+	<div class="poder"></div>
+
+	<div onmousedown="traque(event)" onclick="rodaje()" class="pedro" id="fercho"></div>
+		<div class="enlace"><a href="index.html"> volver </a></div>
+
+
+
+	<audio src="y2mate (mp3cut.net).mp3" id="ja"></audio>
+
+	<script>
+		
+
+		function click()
+		{
+			var numx=Math.floor((Math.random() * (70 - 20))+20);
+			var numy=Math.floor((Math.random() * (70 - 20))+20);
+
+			fercho.style.top=numx+"%";
+			fercho.style.left=numy+"%";
+		}
+
+		function traque()
+		{
+			console.log(fercho.style.top);
+			console.log(fercho.style.left);
+			numx=Math.floor((Math.random() * (70 - 20))+20);
+			numy=Math.floor((Math.random() * (70 - 20))+20);
+
+			fercho.style.top=numx+"%";
+			fercho.style.left=numy+"%";
+			ja.play();	
+	
+		}
+
+
+
+	</script>
+</body>
+</html>

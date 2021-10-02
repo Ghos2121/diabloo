@@ -1,0 +1,152 @@
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>trabajo 1 </title>
+</head>
+<body background="comi.jpg">
+<center><div class="juji">Ghost restaurant </div></center>
+	<style>
+.juji{
+		position: relative;
+		top: 20%;
+		font-size: 600%;
+		color:black;
+		font-family: book antiqua;
+	}
+
+		.gas
+		{
+			background: white;
+			width: 250px;
+			height: 100px;
+			position: absolute;
+			top: 500px;
+			left: 190px;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 25px;
+			color: black;
+
+		}
+			.gas1
+		{
+			background: black;
+			width: 250px;
+			height: 100px;
+			position: absolute;
+			top: 500px;
+			left: 190px;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 25px;
+			color: white;
+}
+		.gas2
+		{
+			background: black;
+			width: 300px;
+			position: absolute;
+			top: 210px;
+			left: 500px;
+			color: white;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+			border: 5px solid;
+
+		}
+		.gas3
+		{
+			background: white;
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			top: 390px;
+			left: 200px;
+			color: black;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+		.gas4
+		{
+			background: white;
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			top: 250px;
+			left: 200px;
+			color: black;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+		.gas5
+		{
+			background: black;
+			width: 300px;
+			height: 400px;
+			position: absolute;
+			top: 200px;
+			left: 160px;
+			border-radius: 10px;	
+			border: 5px solid;
+			color: white;
+		}
+		.enlace
+		{
+
+			background: black;
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 150px;
+			left: 900px;
+			color: white;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			box-sizing: border-box;		
+			font-size: 20px;
+			border: 5px solid;
+			text-align: center;
+		}
+	</style>
+
+		<div class="repo"></div>																								
+	<input type="text" id="precio" class="gas3" placeholder="precio">
+	<input type="text" id="nombre" class="gas4" placeholder="producto">
+	<div class="gas" onclick="gastodo()">Registrar</div>
+	<div class="per"></div>
+	<div class="gas2" id="todo1"></div>
+	<div class="enlace"><a href="cuadritoo.html"> Click para jugar </a></div>
+
+
+
+	<script>
+		
+		function gastodo() 
+		{
+				n1=Number(precio.value);
+				m=(nombre.value);
+				nuevo=m+" "+n1;
+				conte=todo1.innerHTML;
+				conte=conte+nuevo;
+				ratica.innerHTML=conte+"   ";
+		}
+
+	</script>	
+</body>
+</html>
